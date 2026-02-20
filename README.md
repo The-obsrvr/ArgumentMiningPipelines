@@ -57,6 +57,23 @@ After the merge and duplicate removal, 384 documents were retained.
 Next, we filter out entries that do not meet our criteria. We take the help of an LLM and instruct it with the following prompt that contains our selection criteria:
 
 ```
+Carefully review this data file containing 384 research paper meta information and perform an title + abstract level analysis on them.
+Carefully identify if the content covers the following questions:
+
+1. Does the work pursue creating a complete structure: units + relations? (Yes/No/unknown)
+2. Does the work focus either only on units (micro-level) or only on relations (macro)? (micro/macro/unknown)
+3. Does the work indicate a clear argument structure including what argument theory or linguistic foundations have been used? Human annotation and evaluation are indicators of this. (Yes/No/unknown)
+4. If yes to Question 3, does it adopt theory-driven technique like argument schema or data-driven technique like discourse markers, dialogical cues? (theory / data / hybrid / not applicable)
+5. Does the work indicate how an argument structure is computed out of the discourse? This includes explicitly knowing what and how the AM tasks have been arranged and implemented computationally (Yes/No/unknown)
+6. If yes to Question 5, are the taskss modeled by feature engineering, deep learning, or LLMs? (feature / deep learning/LLM/mix/ not applicable)
+7. How many argument mining subtasks (such as argument identification, argument classification, relation identification, and relation classification) have been implemented to create the argument resource? (4 / 3 / 2 / 1 / unknown)
+8. Is the domain identifiable and explicit? (Yes / No / unknown)
+9. Is the domain used in the pre-processing of input data? (yes / No / unknown)
+10. Does the domain integrate in the post-processing of the argument output? (Yes / No / unknown)
+11. Does the work indicate where and how they would apply their approach? (Yes / No / unknown)
+
+Carefully answer each of these questions for each research paper in the document. Select unknown as default if you are NOT SURE of the answer instead of forcing a binary reply.
+We encourage carefully checking for the Yes/No options before defaulting to "unknown". Save your responses in a csv format including the ID, title, abstract, year, venue (if available) and author info.
 ```
 
 We then manually inspect the output produced by the LLM for correctness and filter out entries where certain information cannot be immediately perceived from the abstract. In some exceptional cases, we consider reviewing the rest of the paper (if it is open-access) to see if it meets our selection criteria. By the end we are left with around **164** documents for our analysis.
