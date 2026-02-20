@@ -70,10 +70,22 @@ For this effort, we employ our guiding questions onto the selected relevant lite
 
 ### Linguistic Perspective
 
+1. What are the core argumentation theory and/or linguistic principles used in the structure modeling?
+2. How has the argument and its structure been formalized?
+3. How has the data resource, if any, been produced?
+
 ### Computational Perspective
+
+1. What are the main AM tasks automated in the work?
+2. How are the identified AM tasks implemented computationally?
+3. For each computational model of a task, what are their input and output requirements?
+4. How has each identified computational model been developed and evaluated?
 
 ### Domain Perspective
 
+1. What are the main modules in the pipeline where domain intersects or influences the argument mining process?
+2. How do the structures get framed by the domain, pre-processing or post-processing?
+3. How have the argument structures helped in knowledge discovery, if any?
 
 # To Cite this work
 
