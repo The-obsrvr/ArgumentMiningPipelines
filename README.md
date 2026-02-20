@@ -52,14 +52,14 @@ Merge the different databases
 - Assigning unique ID
 - Removing duplicates: title or abstract are similar. 
 
-After the merge and duplicate removal, 378 documents were retained.
+After the merge and duplicate removal, 384 documents were retained.
 
 Next, we filter out entries that do not meet our criteria. We take the help of an LLM and instruct it with the following prompt that contains our selection criteria:
 
 ```
 ```
 
-We then manually inspect the output produced by the LLM for correctness and filter out entries where certain information cannot be immediately perceived from the abstract. In some exceptional cases, we consider reviewing the rest of the paper (if it is open-access) to see if it meets our selection criteria. By the end we are left with around **150** documents for our analysis.
+We then manually inspect the output produced by the LLM for correctness and filter out entries where certain information cannot be immediately perceived from the abstract. In some exceptional cases, we consider reviewing the rest of the paper (if it is open-access) to see if it meets our selection criteria. By the end we are left with around **164** documents for our analysis.
 
 
 ## 4. Triple-perspective Framework
