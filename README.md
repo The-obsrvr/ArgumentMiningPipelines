@@ -2,7 +2,7 @@
 
 This repository contains the list of AM literature identified and analyzed through the triple-perspective framework.
 
-## Criteria of Literature Selection
+## 1. Criteria of Literature Selection
 
 ### Inclusion Criteria 
 
@@ -20,7 +20,7 @@ Terms included political discourse analysis, social media, speeches, debates, on
 - The work only discusses the AM pipeline from a conceptual point of view and not from an implementation point of view.
 
 
-## Obtain Potentially Relevant Literature
+## 2. Obtain Potentially Relevant Literature
 
 ### Search Queries
 
@@ -45,7 +45,7 @@ Contains “meeting” document type, which means not all documents have been pe
 
 Other databases under consideration include “Semantic Scholar”, “Google Scholar”, “ACL Anthology” etc. but most of them have been covered by SCOPUS and WoS.
 
-## Selection of Relevant Literature
+## 3. Selection of Relevant Literature
 
 Merge the different databases
 
@@ -62,7 +62,7 @@ Next, we filter out entries that do not meet our criteria. We take the help of a
 We then manually inspect the output produced by the LLM for correctness and filter out entries where certain information cannot be immediately perceived from the abstract. In some exceptional cases, we consider reviewing the rest of the paper (if it is open-access) to see if it meets our selection criteria. By the end we are left with around **150** documents for our analysis.
 
 
-## Triple-perspective Framework
+## 4. Triple-perspective Framework
 
 We apply our triple-perspective framework, detailed in the paper, to list how the pipelines model, operationalize, and contextualize argument structures within a domain. 
 
@@ -75,7 +75,7 @@ For this effort, we employ our guiding questions onto the selected relevant lite
 ### Domain Perspective
 
 
-## To Cite this work
+# To Cite this work
 
 {}
 
